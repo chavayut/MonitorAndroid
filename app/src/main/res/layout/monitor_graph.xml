@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/fillable_area">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#31C3ED"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:background="#5EC4BC"
+        android:text="MonitorApp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textStyle="normal|bold"
+        tools:text="Select Monitor" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#6CA6CD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.44"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.67">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#5EC4BC"
+                android:onClick="GAgent"
+                android:text="representative"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle,NestedWeights,SmallSp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#31C3ED"
+                android:onClick="GCampaign"
+                android:text="campaign"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle,HardcodedText,SmallSp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#5EC4BC"
+                android:onClick="GQueue"
+                android:text="queue"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle,SmallSp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#31C3ED"
+                android:onClick="GIVR"
+                android:text="ivr_line"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle,SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04"
+            tools:ignore="InefficientWeight,NestedWeights">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#505B75"
+                android:onClick="GtableViewer"
+                android:text="view"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle,NestedWeights" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#505B75"
+                android:onClick="GtoExit"
+                android:text="exit"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal|bold"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5EC4BC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

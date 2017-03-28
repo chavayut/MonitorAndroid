@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MonitorAndroid</string>
+    <string name="login">LOGIN</string>
+    <string name="monitorapp">MonitorApp</string>
+    <string name="exit">Exit</string>
+    <string name="ivr_line">ivr_line</string>
+    <string name="queue">Queue</string>
+    <string name="representative">Representative</string>
+    <string name="view">View</string>
+</resources>
